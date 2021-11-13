@@ -1,0 +1,43 @@
+doctype html
+html(lang='en')
+    head
+        meta(http-equiv='Content-Type' content='text/html; charset=UTF-8')
+        // Meta, title, CSS, favicons, etc.
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' integrity='sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh' crossorigin='anonymous')
+        link(rel='stylesheet' href='https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css')
+        script(src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous')
+        script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js' integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6' crossorigin='anonymous')
+        script(src='https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.2/bootbox.min.js')
+        script(src='listtable.js')
+    style.
+        .myDiv{
+            width: 50%;
+            height: 50%;
+            margin:0 auto;
+        }
+    body
+        div.myDiv
+            br
+            .input-group.mb-3
+                .input-group-append
+                    button.btn.btn-info(type='submit' onclick='getList()') Get List
+                input#search.form-control(type='text' placeholder="Type your URL" aria-label="Type your URL" aria-describedby='basic-addon2')
+                .input-group-append
+                    button.btn.btn-info(type='submit' onclick='getData()') Search
+        //- Datatable for showing the result
+        div
+            table#list_of_people.table.table-striped.table-bordered(cellspacing='0' width='100%')
+                thead
+                    tr
+                    th S/L
+                    th Username
+                    th First Name
+                    th Last Name
+                    th Gender
+                    th Emails
+                    th Details
+                tbody
