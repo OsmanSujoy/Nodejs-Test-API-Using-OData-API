@@ -3,24 +3,26 @@ A Node.js application with some API endpoints that call OData APIs
 ## Data Source: OData API
 
 ## Project Structure 
-app <br />
-│ <br />
-├── /dist <br />
-├── /node_modules <br />
-├── /src <br />
-│      &nbsp;&nbsp;&nbsp;&nbsp;├── /public <br />
-│      &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── listtable.js <br />
-│      &nbsp;&nbsp;&nbsp;&nbsp;├── /routes <br />
-│      &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── api.ts <br />
-│      &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── index.ts <br />
-│      &nbsp;&nbsp;&nbsp;&nbsp;├── /views <br />
-│      &nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── index.pug <br />
-│      &nbsp;&nbsp;&nbsp;&nbsp;└── index.ts <br />
-├── package.json <br />
-├── .env <br />
-├── tslink.json <br />
-├── tsconfig.json <br />
-└── README.md  <br />
+```
+. 
+├── dist 
+├── node_modules
+├── src
+│   ├── public
+│   │   └── listtable.js
+│   ├── routes 
+│   │   ├── api.ts
+│   │   └── index.ts
+│   ├── views
+│   │   └── index.pug
+│   └── index.ts 
+├── package.json 
+├── .env 
+├── tslink.json 
+├── tsconfig.json
+└── README.md
+```
+
 
 
 ## Step By Step - Instructions 
